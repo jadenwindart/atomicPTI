@@ -18,7 +18,6 @@ function getTestimoni(){
     sender.open('GET','./php/testimoni.php?request=get',true);
     sender.onload = function(){
         if(sender.status >= 200 && sender.status < 400){
-            alert(sender.responseText);
             if(sender.responseText){
                 let data = JSON.parse(sender.responseText);
                 generateTestimoni(data,0);
