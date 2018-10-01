@@ -10,10 +10,12 @@
     }
     if($command == 'send'){
         $testimoni = $_POST['testimoni'];
+        $nama = $_POST['nama'];
         $query = "INSERT INTO testimoni
-                    VALUES (NULL,NULL,'$testimoni',CURDATE()";
+                    VALUES (NULL,'$nama','$testimoni',CURDATE())";
+        echo $query;
         mysqli_query($sql,$query);
-        if(mysqli_affected_rows() > 0 ){
+        if(mysqli_affected_rows($sql) > 0 ){
             echo "testimoni berhasil di masukkan";
         }
         else {
@@ -26,6 +28,7 @@
         while($row = mysqli_fetch_row($result)){
             $data[] = $row;
         }
+        if(isset($data))
         echo json_encode($data);
     }
     else if($command == 'count'){
