@@ -1,0 +1,15 @@
+#c
+{    
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100cH;
+}
+
+#canvas_area
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
