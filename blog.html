@@ -64,17 +64,12 @@
     <div class="templateux-section">
       <div class="container">
         <div class="row" id="testimoniBlock">
-
+                  
         </div> <!-- .row -->
 
          <div class="row mt-5">
           <div class="col-md-12 pt-5">
-            <ul class="pagination custom-pagination">
-              <li class="page-item prev"><a class="page-link" href="#"><i class="icon-keyboard_arrow_left"></i></a></li>
-              <li class="page-item active"><a class="page-linkx href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item next"><a class="page-link" href="#"><i class="icon-keyboard_arrow_right"></i></a></li>
+            <ul class="pagination custom-pagination" id="pagination">
             </ul>
 
 
@@ -84,6 +79,15 @@
       </div>
     </div> <!-- .templateux-section -->
     
+    <div class="templateux-section">
+      <div class="container">
+        <input type="text" placeholder="Nama" id="nama">
+        <textarea name="testimoni" id="txtTesti" cols="30" rows="10"></textarea>
+        <input type="submit" value="submit" onclick="sendTestimoni()">
+      </div>
+    </div> <!-- .templateux-section -->
+    
+
     <footer class="templateux-footer bg-light">
       <div class="container">
 
