@@ -68,3 +68,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.col-white
+{
+  color: white;
+}
